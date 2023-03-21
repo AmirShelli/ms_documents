@@ -16,7 +16,7 @@ class TestDocuments():
         body = { "title": "New title", "body": "Some text" }
         response = requests.post(f'{api_url}/v1/docs', json=body)
         assert response.status_code == 200
-        assert response.json().get('title') == 'New title'
+        assert response.json().get('title') == 'New itle'
         assert response.json().get('body') == 'Some text'
         assert response.json().get('id') == 0
     
